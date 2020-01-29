@@ -224,6 +224,11 @@
           if (lineup) {
             lineup.update();
           }
+        },
+
+        refs: {
+          data:      data,
+          lineup:    lineup
         }
 
       };
