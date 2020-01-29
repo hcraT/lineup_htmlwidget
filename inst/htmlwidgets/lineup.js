@@ -216,6 +216,10 @@
           } else {
             lineup = new LineUpJS.LineUp(el, data, options);
           }
+          this.refs = {
+            data:      data,
+            lineup:    lineup
+          }
         },
 
         resize: function(width, height) {
@@ -224,11 +228,6 @@
           if (lineup) {
             lineup.update();
           }
-        },
-
-        refs: {
-          data:      data,
-          lineup:    lineup
         }
 
       };
